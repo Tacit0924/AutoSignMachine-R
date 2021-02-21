@@ -206,15 +206,15 @@ var start = async (params) => {
 
 
   // 首页-牛气-场馆领牛气
-  await scheduler.regTask('NiujieReceiveCalf', async (request) => {
-    await require('./Niujie').receiveCalf(request, options)
-  }, {
-    isCircle: true,
-    intervalTime: 1 * 3600,
-    startTime: 1,
-    ...taskOption
-  })
-}
+//  await scheduler.regTask('NiujieReceiveCalf', async (request) => {
+//    await require('./Niujie').receiveCalf(request, options)
+//  }, {
+//    isCircle: true,
+//    intervalTime: 1 * 3600,
+//    startTime: 1,
+//    ...taskOption
+//  })
+//}
 module.exports = {
   start
 }
